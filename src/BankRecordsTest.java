@@ -15,7 +15,7 @@ Records.java will print out to the console and print out to a .txt file
 - Number of females with a mortgage and savings account
 - Number of males with both a car and 1 child per location
 */
-/*
+
 public class BankRecordsTest {
     public static void main(String[] args) {
         // Create a new obj and parse / cache / print .csv data
@@ -23,4 +23,3 @@ public class BankRecordsTest {
         records.readClientData();
     }
 }
-*/
