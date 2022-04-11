@@ -41,7 +41,7 @@ public class Dao {
 
             for (BankRecords bankRecords : bankEntry) { // Insert values (id, income, pep)
                 sql = "INSERT INTO j_regi_tab(id, income, pep) " +
-                "VALUES (bankRecords.getClientID(), bankRecords.getClientIncome(), bankRecords.setClientPepStatus())";
+                "VALUES ('"+bankRecords.getClientID()+"', '"+bankRecords.getClientIncome()+"', '"+bankRecords.getClientPepStatus()+"')";
 
                 stmt.executeUpdate(sql);
             }
