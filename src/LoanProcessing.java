@@ -24,7 +24,7 @@ public class LoanProcessing extends BankRecords {
             DBAccess.insertRecords(bankEntry);
             ResultSet rs = DBAccess.retrieveRecords();
 
-            // Iterate and print result set
+            // Iterate through and print result set
             System.out.println("ID:\t\t\tINCOME:\t\t\tPEP:");
             while (rs.next()) {
                 String ID = rs.getString("id");
