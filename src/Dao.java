@@ -35,6 +35,7 @@ public class Dao {
 
     public void insertRecords(BankRecords[] bankEntry) {
         try {
+            System.out.println("Connected to database successfully. . .");
             System.out.println("Inserting records into the table. . .");
             stmt = conn.connect().createStatement();
             String sql;
@@ -46,6 +47,7 @@ public class Dao {
                 stmt.executeUpdate(sql);
             }
             conn.connect().close();
+            System.out.println("Records successfully inserted into the table. . .");
         } catch (SQLException se) {
             se.printStackTrace();
         }
@@ -54,6 +56,7 @@ public class Dao {
     public ResultSet retrieveRecords() {
         try {
             System.out.println("Attempting to retrieve data from table. . .");
+            System.out.println("Creating SELECT statement. . .");
             stmt = conn.connect().createStatement();
             ResultSet rs;
 
